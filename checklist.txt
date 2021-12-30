@@ -1,0 +1,64 @@
+    --- Basket for an Unauthorized User ---
+1. [‘Landing’ page] Verify upon clicking on the ‘Basket' button and there is no product in the basket, 'Basket' button is disable.
+2. [‘Landing’ page] Verify upon clicking on the ‘Basket' button and there is at least one product in the basket, 'Basket' pop-up with a list of all products is displayed.
+3. [‘Basket’ pop-up] Verify upon clicking on the ‘Close' icon, User is returned to the 'Landing' page.
+4. [‘Basket’ pop-up] Verify upon clicking on the ‘Continue shopping' link, User is returned to the 'Landing' page.
+5. [‘Basket’ pop-up] Verify upon clicking on the ‘Checkout' button, User is redirected to the 'Checkout' page.
+6. [‘Basket’ pop-up] Verify upon clicking on the ‘Increase' button, the number of products increased.
+7. [‘Basket’ pop-up] Verify upon clicking on the ‘Decrease' button, the number of products decreased.
+8. [‘Basket’ pop-up] Verify upon clicking on the ‘Remove' button, the product deleted.
+9. [‘Basket’ pop-up] Verify upon clicking on the ‘Product' image, User is redirected to the 'Product' page.
+10. [‘Basket’ pop-up] Verify upon clicking on the ‘Product header' link, User is redirected to the 'Product' page.
+11. [‘Basket’ pop-up] Verify upon clicking on the ‘Product header description' link, User is redirected to the 'Product' page.
+12. [‘Basket’ pop-up] Verify upon clicking on the ‘Product header option' link, User is redirected to the 'Product' page.
+
+    --- Order for a New Customer ---
+1. ['Checkout' page, 'Checkout step 1' tab] Verify upon filling 'Name', 'Surname', 'Phone' fields with valid data and clicking on 'Next' button, 'Checkout step 2' tab is displayed.
+Valid PHONE:
+    - allows only numbers
+    - has length 12
+    - starts with '+'
+2. ['Checkout' page, 'Checkout step 1' tab] Verify upon leaving 'Name', 'Surname', 'Phone' fields are empty and clicking on 'Next' button, 'Name', 'Surname', 'Phone' fields are red.
+3. ['Checkout' page, 'Checkout step 1' tab] Verify upon leaving 'Name', 'Surname' fields are empty, filling 'Phone' field with valid data and clicking on 'Next' button, 'Name', 'Surname' fields are red.
+4. ['Checkout' page, 'Checkout step 1' tab] Verify upon leaving 'Name', 'Phone' fields are empty, filling 'Surname' field with valid data and clicking on 'Next' button, 'Name', 'Phone' fields are red.
+5. ['Checkout' page, 'Checkout step 1' tab] Verify upon leaving 'Surname', 'Phone' fields are empty, filling 'Name' field with valid data and clicking on 'Next' button, 'Surname', 'Phone' fields are red.
+6. ['Checkout' page, 'Checkout step 1' tab] Verify upon leaving 'Name' field is empty, filling 'Surname', 'Phone' fields with valid data and clicking on 'Next' button, 'Name' field is red.
+7. ['Checkout' page, 'Checkout step 1' tab] Verify upon leaving 'Surname' field is empty, filling 'Name', 'Phone' fields with valid data and clicking on 'Next' button, 'Surname' field is red.
+8. ['Checkout' page, 'Checkout step 1' tab] Verify upon leaving 'Phone' field is empty, filling 'Name', 'Surname' fields with valid data and clicking on 'Next' button, 'Phone' field is red.
+9. ['Checkout' page, 'Checkout step 1' tab] Verify upon filling 'Name', 'Surname' fields with valid data, filling 'Phone' field with latin letters in upper and/or lower case (A-Z, a-z) and clicking on 'Next' button, 'Phone' field is not filled and red.
+10. ['Checkout' page, 'Checkout step 1' tab] Verify upon filling 'Name', 'Surname' fields with valid data, filling 'Phone' field with special characters like !#$%&’*-/=?^_{|}~, and clicking on 'Next' button, 'Phone' field is not filled and red.
+11. ['Checkout' page, 'Checkout step 1' tab] Verify upon filling 'Name', 'Surname' fields with valid data, filling 'Phone' field with less than 12 numbers and clicking on 'Next' button, 'Phone' field is not filled and red.
+12. ['Checkout' page, 'Checkout step 1' tab] Verify upon filling 'Name', 'Surname' fields with valid data, filling 'Phone' field with less more 12 numbers and clicking on 'Next' button, 'Phone' field is not filled and red.
+13. ['Checkout' page, 'Checkout step 1' tab] Verify upon clicking on empty 'Phone' field, field is filling with pattern '+38 (0____) ____ __ __'.
+14. ['Checkout' page, 'Checkout step 1' tab] Verify upon filling 'Name', 'Surname', 'Phone' fields with valid data, filling 'Email' field with missing domain part of email and clicking button 'Next', 'Email' field is red.
+15. ['Checkout' page, 'Checkout step 1' tab] Verify upon filling 'Name', 'Surname', 'Phone' fields with valid data, filling 'Email' field with missing local part of email and clicking button 'Next', 'Email' field is red.
+16. ['Checkout' page, 'Checkout step 1' tab] Verify upon filling 'Name', 'Surname', 'Phone' fields with valid data, filling 'Email' field with missing local part length is more than 64 symbols and clicking button 'Next', 'Email' field is red.
+17. ['Checkout' page, 'Checkout step 1' tab] Verify upon filling 'Name', 'Surname', 'Phone' fields with valid data, filling 'Email' field with domain part length is more than 255 symbols and clicking button 'Next', 'Email' field is red.
+18. ['Checkout' page, 'Checkout step 1' tab] Verify upon filling 'Name', 'Surname', 'Phone' fields with valid data, filling 'Email' field with domain part of email and clicking button 'Next', 'Email' field is red.
+19. ['Checkout' page, 'Checkout step 1' tab] Verify upon filling 'Name', 'Surname', 'Phone' fields with valid data, filling 'Email' field with total length is more than 256 symbols and clicking button 'Next', 'Email' field is red.
+20. ['Checkout' page, 'Checkout step 1' tab] Verify upon filling 'Name', 'Surname', 'Phone' fields with valid data, filling 'Email' field with at least one space anywhere and clicking button 'Next', 'Email' field is red.
+21. ['Checkout' page, 'Checkout step 1' tab] Verify upon filling 'Name', 'Surname', 'Phone' fields with valid data, filling 'Email' field with local part, which has dot: . (first or last character) and clicking button 'Next', 'Email' field is red.
+22. ['Checkout' page, 'Checkout step 1' tab] Verify upon filling 'Name', 'Surname', 'Phone' fields with valid data, filling 'Email' field with domain part has hyphen: - (first or last character) and clicking button 'Next', 'Email' field is red.
+23. ['Checkout' page, 'Checkout step 1' tab] Verify upon filling 'Name', 'Surname', 'Phone' fields with valid data, filling 'Email' field with domain part has special characters like !#$%&’*+-/=?^_{|}~, and clicking button 'Next', 'Email' field is red.
+24. ['Checkout' page, 'Checkout step 1' tab] Verify upon filling 'Name', 'Surname', 'Phone' fields with valid data, filling 'Email' field with domain part has one part without dot(.) and clicking button 'Next', field is red.
+25. ['Checkout' page, 'Checkout step 1' tab] Verify upon filling 'Name', 'Surname', 'Phone' fields with valid data, filling 'Email' field with valid data, message 'order-register-promo' is displayed.
+Valid EMAIL:
+    - The basic format of an e-mail address is- local-part@domain-part (max: 64@255 characters, no more 256 in total).
+    - The local part:
+        -- latin letters in upper and/or lower case (A-Z, a-z)
+        -- numbers (from 0 to 9)
+        -- special characters like !#$%&’*+-/=?^_{|}~,
+        -- dot: . (not first or last character)
+    - The domain part:
+        -- has two parts separated by dot(.)
+        -- latin letters in upper and/or lower case (A-Z, a-z)
+        -- numbers (from 0 to 9)
+        -- hyphen: - (not first or last character)
+26. ['Checkout' page, 'Checkout step 1' tab] Verify upon hovering the mouse over link 'For order status', message about email is displayed.
+27. ['Checkout' page, 'Checkout step 1' tab] Verify upon filling 'Name', 'Surname', 'Phone', 'Email' fields with valid data and reloading page, fields are filled.
+28. ['Checkout' page, 'Checkout step 1' tab] Verify upon filling 'Name', 'Surname', 'Phone', 'Email' fields with invalid data and reloading page, fields are filled.
+
+# not finish this part
+1. ['Checkout' page, 'Checkout step 2' tab] Verify upon clicking on 'City' field, 'Search' drop-down field is displayed.
+2. ['Checkout' page, 'Checkout step 2' tab] Verify upon clicking on 'Remove' button field, 'Search' drop-down field is hidden.
+3. ['Checkout' page, 'Checkout step 2' tab] Verify upon filling 'Search' drop-down field with less than 3 letters, .
